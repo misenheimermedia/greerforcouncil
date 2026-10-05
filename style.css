@@ -1,0 +1,2178 @@
+/* ========================================
+   LANCE GREER CAMPAIGN LANDING PAGE
+======================================== */
+
+
+/* ========================================
+   RESET
+======================================== */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+html,
+body {
+    width: 100%;
+    min-height: 100%;
+}
+
+
+body {
+    background: #ffffff;
+
+    color: #222222;
+
+    font-family:
+        Arial,
+        Helvetica,
+        sans-serif;
+
+    line-height: 1.7;
+}
+
+
+
+/* ========================================
+   SECTION 1 - CAMPAIGN HERO
+======================================== */
+
+.campaign-hero {
+    width: 100%;
+
+    background: #071d48;
+
+    overflow: hidden;
+
+    border-bottom:
+        6px solid
+        #d5b15f;
+}
+
+
+.campaign-hero img {
+    display: block;
+
+    width: 100%;
+
+    height: auto;
+
+    max-width: 1600px;
+
+    margin: 0 auto;
+}
+
+
+
+/* ========================================
+   SECTION 2 - MEET LANCE
+======================================== */
+
+.meet-lance {
+    position: relative;
+
+    padding:
+        95px
+        30px
+        105px;
+
+    background:
+        linear-gradient(
+            180deg,
+            #ffffff 0%,
+            #fffdf8 65%,
+            #f8f1e5 100%
+        );
+
+    text-align: center;
+
+    border-bottom:
+        7px solid
+        #d5b15f;
+
+    overflow: hidden;
+}
+
+
+
+/* subtle decorative background */
+
+.meet-lance::before {
+    content: "";
+
+    position: absolute;
+
+    width: 500px;
+
+    height: 500px;
+
+    right: -250px;
+
+    top: -250px;
+
+    border-radius: 50%;
+
+    border:
+        60px solid
+        rgba(
+            39,
+            57,
+            111,
+            0.035
+        );
+}
+
+
+.meet-lance::after {
+    content: "★ ★ ★ ★ ★";
+
+    position: absolute;
+
+    left: 30px;
+
+    bottom: 20px;
+
+    color:
+        rgba(
+            39,
+            57,
+            111,
+            0.035
+        );
+
+    font-size: 3rem;
+
+    letter-spacing: 15px;
+}
+
+
+
+/* CONTENT WIDTH */
+
+.meet-lance-inner {
+    position: relative;
+
+    z-index: 2;
+
+    width: 100%;
+
+    max-width: 1050px;
+
+    margin: 0 auto;
+}
+
+
+
+/* ========================================
+   PATRIOTIC STARS
+======================================== */
+
+.meet-stars {
+    margin-bottom: 18px;
+
+    color: #27396f;
+
+    font-size: 1.7rem;
+
+    letter-spacing: 12px;
+}
+
+
+.meet-stars span {
+    color: #d5122a;
+
+    font-size: 2.3rem;
+}
+
+
+
+/* ========================================
+   SMALL HEADING
+======================================== */
+
+.meet-kicker {
+    margin-bottom: 13px;
+
+    color: #d5122a;
+
+    font-size: 0.8rem;
+
+    font-weight: 900;
+
+    letter-spacing: 4px;
+}
+
+
+
+/* ========================================
+   MAIN HEADING
+======================================== */
+
+.meet-lance h2 {
+    margin: 0;
+
+    color: #111111;
+
+    font-size:
+        clamp(
+            3.4rem,
+            7vw,
+            6.2rem
+        );
+
+    font-weight: 900;
+
+    line-height: 0.92;
+
+    letter-spacing: -3px;
+}
+
+
+.meet-lance h2 span {
+    display: block;
+
+    margin-top: 12px;
+
+    color: #27396f;
+}
+
+
+
+/* ========================================
+   GOLD DIVIDER
+======================================== */
+
+.meet-divider {
+    width: 85%;
+
+    margin:
+        38px
+        auto;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    gap: 15px;
+}
+
+
+.meet-divider span {
+    width: 38%;
+
+    max-width: 280px;
+
+    height: 2px;
+
+    background:
+        linear-gradient(
+            to right,
+            transparent,
+            #d5b15f
+        );
+}
+
+
+.meet-divider span:last-child {
+    background:
+        linear-gradient(
+            to left,
+            transparent,
+            #d5b15f
+        );
+}
+
+
+.meet-divider b {
+    color: #d5b15f;
+
+    font-size: 1.5rem;
+}
+
+
+
+/* ========================================
+   BIO
+======================================== */
+
+.meet-bio {
+    max-width: 930px;
+
+    margin: 0 auto;
+
+    color: #252525;
+
+    font-family:
+        Georgia,
+        "Times New Roman",
+        serif;
+
+    font-size:
+        clamp(
+            1.2rem,
+            2vw,
+            1.5rem
+        );
+
+    line-height: 1.85;
+
+    letter-spacing: 0.25px;
+}
+
+
+
+/* ========================================
+   LARGE SCREENS
+======================================== */
+
+@media (min-width: 1600px) {
+
+    .campaign-hero {
+        display: flex;
+
+        justify-content: center;
+    }
+
+}
+
+
+
+/* ========================================
+   MOBILE
+======================================== */
+
+@media (max-width: 600px) {
+
+
+    .campaign-hero {
+        border-bottom-width: 4px;
+    }
+
+
+    .meet-lance {
+        padding:
+            65px
+            22px
+            75px;
+    }
+
+
+    .meet-stars {
+        font-size: 1.2rem;
+
+        letter-spacing: 7px;
+    }
+
+
+    .meet-stars span {
+        font-size: 1.7rem;
+    }
+
+
+    .meet-kicker {
+        font-size: 0.67rem;
+
+        letter-spacing: 2px;
+    }
+
+
+    .meet-lance h2 {
+        font-size: 3.3rem;
+
+        letter-spacing: -2px;
+    }
+
+
+    .meet-divider {
+        width: 100%;
+
+        margin:
+            30px
+            auto;
+    }
+
+
+    .meet-bio {
+        font-size: 1.05rem;
+
+        line-height: 1.7;
+    }
+
+}
+/* ========================================
+   MEET LANCE - BIO + FAMILY PHOTO
+======================================== */
+
+.meet-content {
+    width: 100%;
+
+    max-width: 1050px;
+
+    margin: 0 auto;
+
+    display: grid;
+
+    grid-template-columns:
+        1.15fr
+        0.85fr;
+
+    gap: 55px;
+
+    align-items: center;
+
+    text-align: left;
+}
+
+
+/* BIO SIDE */
+
+.meet-copy {
+    position: relative;
+}
+
+
+.meet-copy .meet-bio {
+    max-width: none;
+
+    margin: 0;
+
+    text-align: left;
+
+    font-size:
+        clamp(
+            1.15rem,
+            1.7vw,
+            1.4rem
+        );
+
+    line-height: 1.85;
+}
+
+
+/* FAMILY PHOTO FRAME */
+
+.family-photo-frame {
+    position: relative;
+
+    padding: 9px;
+
+    background: #ffffff;
+
+    border:
+        3px solid
+        #d5b15f;
+
+    box-shadow:
+        0 18px 40px
+        rgba(
+            7,
+            29,
+            72,
+            0.20
+        );
+
+    transform:
+        rotate(1deg);
+}
+
+
+/* RED + NAVY DECORATIVE ACCENTS */
+
+.family-photo-frame::before {
+    content: "";
+
+    position: absolute;
+
+    top: -10px;
+    left: -10px;
+
+    width: 75px;
+    height: 75px;
+
+    border-top:
+        9px solid
+        #d5122a;
+
+    border-left:
+        9px solid
+        #d5122a;
+
+    z-index: 2;
+}
+
+
+.family-photo-frame::after {
+    content: "★";
+
+    position: absolute;
+
+    top: -22px;
+    right: -18px;
+
+    width: 45px;
+    height: 45px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    background: #27396f;
+
+    color: #ffffff;
+
+    border:
+        3px solid
+        #d5b15f;
+
+    font-size: 1.35rem;
+
+    z-index: 3;
+}
+
+
+/* PHOTO */
+
+.family-photo-frame img {
+    display: block;
+
+    width: 100%;
+
+    height: auto;
+
+    object-fit: cover;
+}
+
+
+/* FAMILY CAPTION */
+
+.family-photo-caption {
+    padding:
+        12px
+        10px;
+
+    background: #27396f;
+
+    color: #ffffff;
+
+    text-align: center;
+
+    font-family:
+        Georgia,
+        "Times New Roman",
+        serif;
+
+    font-size: 1.15rem;
+
+    font-style: italic;
+
+    border-top:
+        4px solid
+        #d5122a;
+}
+
+
+
+/* ========================================
+   MOBILE
+======================================== */
+
+@media (max-width: 750px) {
+
+    .meet-content {
+        grid-template-columns: 1fr;
+
+        gap: 45px;
+    }
+
+
+    .meet-copy .meet-bio {
+        text-align: center;
+    }
+
+
+    .family-photo-frame {
+        width: 90%;
+
+        max-width: 450px;
+
+        margin: 0 auto;
+
+        transform: none;
+    }
+
+}
+/* ========================================
+   SECTION 3 - CAMPAIGN FOCUSES
+======================================== */
+
+.focus-section {
+    position: relative;
+
+    overflow: hidden;
+
+    padding:
+        95px
+        30px
+        110px;
+
+    color: #ffffff;
+
+    text-align: center;
+
+    background:
+        linear-gradient(
+            135deg,
+            #071d48 0%,
+            #102f68 55%,
+            #27396f 100%
+        );
+
+    border-bottom:
+        7px solid
+        #d5b15f;
+}
+
+
+/* SUBTLE PATRIOTIC BACKGROUND STARS */
+
+.focus-section::before {
+    content: "★ ★ ★ ★ ★ ★ ★ ★ ★ ★ ★ ★";
+
+    position: absolute;
+
+    top: 15px;
+
+    right: -30px;
+
+    width: 520px;
+
+    color:
+        rgba(
+            255,
+            255,
+            255,
+            0.045
+        );
+
+    font-size: 3rem;
+
+    line-height: 1.8;
+
+    letter-spacing: 10px;
+
+    transform:
+        rotate(-8deg);
+}
+
+
+/* SUBTLE RED STRIPE */
+
+.focus-section::after {
+    content: "";
+
+    position: absolute;
+
+    width: 700px;
+
+    height: 90px;
+
+    right: -250px;
+
+    bottom: -30px;
+
+    background:
+        rgba(
+            213,
+            18,
+            42,
+            0.18
+        );
+
+    transform:
+        rotate(-12deg);
+}
+
+
+.focus-inner {
+    position: relative;
+
+    z-index: 2;
+
+    width: 100%;
+
+    max-width: 1150px;
+
+    margin: 0 auto;
+}
+
+
+/* ========================================
+   SECTION HEADER
+======================================== */
+
+.focus-stars {
+    margin-bottom: 15px;
+
+    color: #ffffff;
+
+    font-size: 1.6rem;
+
+    letter-spacing: 12px;
+}
+
+
+.focus-stars span {
+    color: #d5122a;
+
+    font-size: 2.2rem;
+}
+
+
+.focus-kicker {
+    margin-bottom: 12px;
+
+    color: #d5b15f;
+
+    font-size: 0.8rem;
+
+    font-weight: 900;
+
+    letter-spacing: 5px;
+}
+
+
+.focus-section h2 {
+    margin: 0;
+
+    color: #ffffff;
+
+    font-size:
+        clamp(
+            3.2rem,
+            6vw,
+            5.5rem
+        );
+
+    font-weight: 900;
+
+    line-height: 0.95;
+
+    letter-spacing: -3px;
+}
+
+
+.focus-section h2 span {
+    display: block;
+
+    margin-top: 8px;
+
+    color: #d5b15f;
+}
+
+
+/* ========================================
+   DIVIDER
+======================================== */
+
+.focus-divider {
+    width: 80%;
+
+    margin:
+        35px
+        auto
+        55px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    gap: 15px;
+}
+
+
+.focus-divider span {
+    width: 38%;
+
+    max-width: 280px;
+
+    height: 2px;
+
+    background:
+        linear-gradient(
+            to right,
+            transparent,
+            #d5b15f
+        );
+}
+
+
+.focus-divider span:last-child {
+    background:
+        linear-gradient(
+            to left,
+            transparent,
+            #d5b15f
+        );
+}
+
+
+.focus-divider b {
+    color: #d5b15f;
+
+    font-size: 1.4rem;
+}
+
+
+/* ========================================
+   THREE FOCUS CARDS
+======================================== */
+
+.focus-grid {
+    display: grid;
+
+    grid-template-columns:
+        repeat(3, 1fr);
+
+    gap: 28px;
+}
+
+
+.focus-card {
+    position: relative;
+
+    min-height: 300px;
+
+    padding:
+        55px
+        28px
+        45px;
+
+    display: flex;
+
+    flex-direction: column;
+
+    align-items: center;
+
+    justify-content: center;
+
+    color: #071d48;
+
+    background:
+        linear-gradient(
+            180deg,
+            #fffdf8,
+            #f6edda
+        );
+
+    border:
+        3px solid
+        #d5b15f;
+
+    border-top:
+        9px solid
+        #d5122a;
+
+    box-shadow:
+        0 20px 40px
+        rgba(
+            0,
+            0,
+            0,
+            0.22
+        );
+
+    transition:
+        transform 0.2s ease,
+        box-shadow 0.2s ease;
+}
+
+
+.focus-card:hover {
+    transform:
+        translateY(-7px);
+
+    box-shadow:
+        0 27px 48px
+        rgba(
+            0,
+            0,
+            0,
+            0.30
+        );
+}
+
+
+/* CARD NUMBER */
+
+.focus-number {
+    position: absolute;
+
+    top: 12px;
+
+    left: 18px;
+
+    color:
+        rgba(
+            39,
+            57,
+            111,
+            0.13
+        );
+
+    font-size: 2.3rem;
+
+    font-weight: 900;
+
+    line-height: 1;
+}
+
+
+/* STAR */
+
+.focus-icon {
+    width: 70px;
+
+    height: 70px;
+
+    margin-bottom: 25px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    color: #ffffff;
+
+    background: #d5122a;
+
+    border-radius: 50%;
+
+    border:
+        4px solid
+        #d5b15f;
+
+    font-size: 2rem;
+
+    box-shadow:
+        0 8px 20px
+        rgba(
+            7,
+            29,
+            72,
+            0.18
+        );
+}
+
+
+/* CARD HEADINGS */
+
+.focus-card h3 {
+    color: #071d48;
+
+    font-size:
+        clamp(
+            1.4rem,
+            2vw,
+            1.8rem
+        );
+
+    font-weight: 900;
+
+    line-height: 1.12;
+
+    letter-spacing: 1px;
+}
+
+
+.focus-card h3 span {
+    display: block;
+
+    margin-top: 6px;
+
+    color: #d5122a;
+}
+
+
+/* SMALL GOLD DECORATION */
+
+.focus-card::after {
+    content: "★ ★ ★";
+
+    position: absolute;
+
+    bottom: 15px;
+
+    color: #d5b15f;
+
+    font-size: 0.65rem;
+
+    letter-spacing: 5px;
+}
+
+
+/* ========================================
+   TABLET / MOBILE
+======================================== */
+
+@media (max-width: 850px) {
+
+    .focus-grid {
+        grid-template-columns: 1fr;
+
+        max-width: 550px;
+
+        margin: 0 auto;
+    }
+
+
+    .focus-card {
+        min-height: 240px;
+    }
+
+}
+
+
+@media (max-width: 600px) {
+
+    .focus-section {
+        padding:
+            70px
+            22px
+            80px;
+    }
+
+
+    .focus-stars {
+        font-size: 1.2rem;
+
+        letter-spacing: 7px;
+    }
+
+
+    .focus-stars span {
+        font-size: 1.7rem;
+    }
+
+
+    .focus-kicker {
+        font-size: 0.67rem;
+
+        letter-spacing: 2px;
+    }
+
+
+    .focus-section h2 {
+        font-size: 3rem;
+
+        letter-spacing: -2px;
+    }
+
+
+    .focus-divider {
+        width: 100%;
+
+        margin:
+            30px
+            auto
+            40px;
+    }
+
+}
+/* ========================================
+   SECTION 4 - CAMPAIGN CONTACT
+======================================== */
+
+.campaign-contact {
+    position: relative;
+
+    overflow: hidden;
+
+    padding:
+        100px
+        30px
+        110px;
+
+    text-align: center;
+
+    background:
+        linear-gradient(
+            180deg,
+            #fffdf8 0%,
+            #f5eddd 100%
+        );
+
+    border-bottom:
+        7px solid
+        #d5b15f;
+}
+
+
+/* SUBTLE PATRIOTIC DECORATION */
+
+.campaign-contact::before {
+    content: "★ ★ ★ ★ ★ ★ ★ ★";
+
+    position: absolute;
+
+    top: 25px;
+    left: -20px;
+
+    color:
+        rgba(
+            39,
+            57,
+            111,
+            0.04
+        );
+
+    font-size: 3.5rem;
+
+    letter-spacing: 12px;
+
+    transform:
+        rotate(-6deg);
+}
+
+
+.campaign-contact::after {
+    content: "";
+
+    position: absolute;
+
+    width: 650px;
+    height: 100px;
+
+    right: -250px;
+    bottom: -30px;
+
+    background:
+        rgba(
+            213,
+            18,
+            42,
+            0.07
+        );
+
+    transform:
+        rotate(-12deg);
+}
+
+
+.campaign-contact-inner {
+    position: relative;
+
+    z-index: 2;
+
+    width: 100%;
+
+    max-width: 1150px;
+
+    margin: 0 auto;
+}
+
+
+/* ========================================
+   CONTACT SECTION HEADING
+======================================== */
+
+.contact-stars {
+    margin-bottom: 16px;
+
+    color: #27396f;
+
+    font-size: 1.6rem;
+
+    letter-spacing: 12px;
+}
+
+
+.contact-stars span {
+    color: #d5122a;
+
+    font-size: 2.2rem;
+}
+
+
+.contact-kicker {
+    margin-bottom: 12px;
+
+    color: #d5122a;
+
+    font-size: 0.8rem;
+
+    font-weight: 900;
+
+    letter-spacing: 5px;
+}
+
+
+.campaign-contact h2 {
+    margin: 0;
+
+    color: #111111;
+
+    font-size:
+        clamp(
+            3.1rem,
+            6vw,
+            5.4rem
+        );
+
+    font-weight: 900;
+
+    line-height: 0.95;
+
+    letter-spacing: -3px;
+}
+
+
+.campaign-contact h2 span {
+    display: block;
+
+    margin-top: 8px;
+
+    color: #27396f;
+}
+
+
+.contact-subtitle {
+    max-width: 700px;
+
+    margin:
+        22px
+        auto
+        0;
+
+    color: #555555;
+
+    font-family:
+        Georgia,
+        "Times New Roman",
+        serif;
+
+    font-size: 1.15rem;
+
+    font-style: italic;
+}
+
+
+/* ========================================
+   CONTACT DIVIDER
+======================================== */
+
+.contact-divider {
+    width: 80%;
+
+    margin:
+        35px
+        auto
+        55px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    gap: 15px;
+}
+
+
+.contact-divider span {
+    width: 38%;
+
+    max-width: 280px;
+
+    height: 2px;
+
+    background:
+        linear-gradient(
+            to right,
+            transparent,
+            #d5b15f
+        );
+}
+
+
+.contact-divider span:last-child {
+    background:
+        linear-gradient(
+            to left,
+            transparent,
+            #d5b15f
+        );
+}
+
+
+.contact-divider b {
+    color: #d5b15f;
+
+    font-size: 1.4rem;
+}
+
+
+/* ========================================
+   CONTACT CARDS
+======================================== */
+
+.campaign-contact-grid {
+    display: grid;
+
+    grid-template-columns:
+        repeat(3, 1fr);
+
+    gap: 28px;
+}
+
+
+.campaign-contact-card {
+    min-height: 330px;
+
+    padding:
+        45px
+        28px;
+
+    display: flex;
+
+    flex-direction: column;
+
+    align-items: center;
+
+    justify-content: center;
+
+    color: #27396f;
+
+    background: #ffffff;
+
+    text-decoration: none;
+
+    border:
+        3px solid
+        #d5b15f;
+
+    border-top:
+        9px solid
+        #d5122a;
+
+    box-shadow:
+        0 18px 38px
+        rgba(
+            7,
+            29,
+            72,
+            0.14
+        );
+
+    transition:
+        transform 0.2s ease,
+        box-shadow 0.2s ease;
+}
+
+
+.campaign-contact-card:hover {
+    transform:
+        translateY(-7px);
+
+    box-shadow:
+        0 26px 48px
+        rgba(
+            7,
+            29,
+            72,
+            0.22
+        );
+}
+
+
+/* ICON CIRCLE */
+
+.campaign-contact-icon {
+    width: 76px;
+    height: 76px;
+
+    margin-bottom: 24px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    color: #ffffff;
+
+    background: #27396f;
+
+    border-radius: 50%;
+
+    border:
+        4px solid
+        #d5b15f;
+
+    font-size: 2rem;
+
+    font-weight: 900;
+}
+
+
+.campaign-contact-card:first-child
+.campaign-contact-icon {
+    background: #d5122a;
+}
+
+
+/* LABEL */
+
+.campaign-contact-label {
+    margin-bottom: 7px;
+
+    color: #d5122a;
+
+    font-size: 0.72rem;
+
+    font-weight: 900;
+
+    letter-spacing: 2px;
+}
+
+
+/* MAIN CONTACT TEXT */
+
+.campaign-contact-card h3 {
+    margin-bottom: 28px;
+
+    color: #27396f;
+
+    font-size: 1.45rem;
+
+    line-height: 1.2;
+}
+
+
+.campaign-email {
+    font-size: 1rem !important;
+
+    overflow-wrap: anywhere;
+}
+
+
+/* BUTTON */
+
+.campaign-contact-button {
+    display: inline-block;
+
+    padding:
+        10px
+        18px;
+
+    color: #ffffff;
+
+    background: #d5122a;
+
+    font-size: 0.72rem;
+
+    font-weight: 900;
+
+    letter-spacing: 1px;
+
+    border:
+        2px solid
+        #d5122a;
+
+    transition: 0.2s ease;
+}
+
+
+.campaign-contact-card:hover
+.campaign-contact-button {
+    color: #ffffff;
+
+    background: #27396f;
+
+    border-color: #27396f;
+}
+
+
+/* GOLD STARS UNDER EACH CARD */
+
+.campaign-contact-card::after {
+    content: "★ ★ ★";
+
+    margin-top: 22px;
+
+    color: #d5b15f;
+
+    font-size: 0.65rem;
+
+    letter-spacing: 5px;
+}
+
+
+/* ========================================
+   TABLET
+======================================== */
+
+@media (max-width: 850px) {
+
+    .campaign-contact-grid {
+        grid-template-columns: 1fr;
+
+        max-width: 550px;
+
+        margin: 0 auto;
+    }
+
+
+    .campaign-contact-card {
+        min-height: 270px;
+    }
+
+}
+
+
+/* ========================================
+   MOBILE
+======================================== */
+
+@media (max-width: 600px) {
+
+    .campaign-contact {
+        padding:
+            70px
+            22px
+            80px;
+    }
+
+
+    .contact-stars {
+        font-size: 1.2rem;
+
+        letter-spacing: 7px;
+    }
+
+
+    .contact-stars span {
+        font-size: 1.7rem;
+    }
+
+
+    .contact-kicker {
+        font-size: 0.67rem;
+
+        letter-spacing: 2px;
+    }
+
+
+    .campaign-contact h2 {
+        font-size: 3rem;
+
+        letter-spacing: -2px;
+    }
+
+
+    .contact-subtitle {
+        font-size: 1rem;
+    }
+
+
+    .contact-divider {
+        width: 100%;
+
+        margin:
+            30px
+            auto
+            40px;
+    }
+
+}
+/* ========================================
+   CAMPAIGN DISCLAIMER
+======================================== */
+
+.campaign-disclaimer {
+    padding: 18px 20px;
+
+    background: #071d48;
+
+    color: #ffffff;
+
+    text-align: center;
+
+    border-top:
+        2px solid
+        #d5b15f;
+}
+
+
+.campaign-disclaimer p {
+    margin: 0;
+
+    font-size: 0.7rem;
+
+    line-height: 1.4;
+
+    letter-spacing: 0.4px;
+}
+
+
+/* MOBILE */
+
+@media (max-width: 600px) {
+
+    .campaign-disclaimer {
+        padding:
+            16px
+            18px;
+    }
+
+
+    .campaign-disclaimer p {
+        font-size: 0.64rem;
+    }
+
+}
+/* ========================================
+   SECTION 5 - CAMPAIGN DONATIONS
+======================================== */
+
+.donation-section {
+    position: relative;
+
+    overflow: hidden;
+
+    padding:
+        100px
+        30px
+        110px;
+
+    color: #ffffff;
+
+    text-align: center;
+
+    background:
+        linear-gradient(
+            135deg,
+            #071d48 0%,
+            #102f68 55%,
+            #27396f 100%
+        );
+
+    border-top:
+        7px solid
+        #d5b15f;
+}
+
+
+/* FAINT PATRIOTIC DECORATION */
+
+.donation-section::before {
+    content: "★ ★ ★ ★ ★ ★ ★ ★ ★";
+
+    position: absolute;
+
+    top: 20px;
+
+    right: -25px;
+
+    color:
+        rgba(
+            255,
+            255,
+            255,
+            0.045
+        );
+
+    font-size: 3.2rem;
+
+    letter-spacing: 14px;
+
+    transform:
+        rotate(-7deg);
+}
+
+
+.donation-section::after {
+    content: "";
+
+    position: absolute;
+
+    width: 700px;
+
+    height: 100px;
+
+    left: -250px;
+
+    bottom: -30px;
+
+    background:
+        rgba(
+            213,
+            18,
+            42,
+            0.16
+        );
+
+    transform:
+        rotate(12deg);
+}
+
+
+.donation-inner {
+    position: relative;
+
+    z-index: 2;
+
+    width: 100%;
+
+    max-width: 1050px;
+
+    margin: 0 auto;
+}
+
+
+
+/* ========================================
+   DONATION HEADING
+======================================== */
+
+.donation-stars {
+    margin-bottom: 16px;
+
+    color: #ffffff;
+
+    font-size: 1.6rem;
+
+    letter-spacing: 12px;
+}
+
+
+.donation-stars span {
+    color: #d5122a;
+
+    font-size: 2.2rem;
+}
+
+
+.donation-kicker {
+    margin-bottom: 12px;
+
+    color: #d5b15f;
+
+    font-size: 0.8rem;
+
+    font-weight: 900;
+
+    letter-spacing: 5px;
+}
+
+
+.donation-section h2 {
+    margin: 0;
+
+    color: #ffffff;
+
+    font-size:
+        clamp(
+            3.5rem,
+            7vw,
+            6rem
+        );
+
+    font-weight: 900;
+
+    line-height: 0.9;
+
+    letter-spacing: -3px;
+}
+
+
+.donation-section h2 span {
+    display: block;
+
+    margin-top: 8px;
+
+    color: #d5122a;
+}
+
+
+
+/* ========================================
+   GOLD DIVIDER
+======================================== */
+
+.donation-divider {
+    width: 80%;
+
+    margin:
+        35px
+        auto
+        55px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    gap: 15px;
+}
+
+
+.donation-divider span {
+    width: 38%;
+
+    max-width: 280px;
+
+    height: 2px;
+
+    background:
+        linear-gradient(
+            to right,
+            transparent,
+            #d5b15f
+        );
+}
+
+
+.donation-divider span:last-child {
+    background:
+        linear-gradient(
+            to left,
+            transparent,
+            #d5b15f
+        );
+}
+
+
+.donation-divider b {
+    color: #d5b15f;
+
+    font-size: 1.4rem;
+}
+
+
+
+/* ========================================
+   MAIN DONATION CARD
+======================================== */
+
+.donation-card {
+    display: grid;
+
+    grid-template-columns:
+        0.8fr
+        1.2fr;
+
+    gap: 55px;
+
+    align-items: center;
+
+    padding:
+        55px;
+
+    color: #202020;
+
+    text-align: left;
+
+    background:
+        linear-gradient(
+            180deg,
+            #fffdf8,
+            #f7efdf
+        );
+
+    border:
+        3px solid
+        #d5b15f;
+
+    border-top:
+        10px solid
+        #d5122a;
+
+    box-shadow:
+        0 22px 45px
+        rgba(
+            0,
+            0,
+            0,
+            0.28
+        );
+}
+
+
+
+/* ========================================
+   QR CODE
+======================================== */
+
+.donation-qr {
+    position: relative;
+
+    padding: 14px;
+
+    background: #ffffff;
+
+    border:
+        3px solid
+        #27396f;
+
+    box-shadow:
+        0 15px 30px
+        rgba(
+            7,
+            29,
+            72,
+            0.18
+        );
+}
+
+
+.donation-qr::before {
+    content: "SCAN TO SUPPORT";
+
+    display: block;
+
+    margin-bottom: 12px;
+
+    padding:
+        9px
+        8px;
+
+    color: #ffffff;
+
+    background: #d5122a;
+
+    text-align: center;
+
+    font-size: 0.75rem;
+
+    font-weight: 900;
+
+    letter-spacing: 2px;
+}
+
+
+.donation-qr img {
+    display: block;
+
+    width: 100%;
+
+    height: auto;
+}
+
+
+.donation-qr a {
+    display: block;
+}
+
+
+
+/* ========================================
+   DONATION TEXT
+======================================== */
+
+.donation-small {
+    margin-bottom: 10px;
+
+    color: #d5122a;
+
+    font-size: 0.75rem;
+
+    font-weight: 900;
+
+    letter-spacing: 3px;
+}
+
+
+.donation-copy h3 {
+    margin-bottom: 22px;
+
+    color: #27396f;
+
+    font-size:
+        clamp(
+            2rem,
+            4vw,
+            3.3rem
+        );
+
+    font-weight: 900;
+
+    line-height: 1;
+}
+
+
+.donation-copy h3 span {
+    color: #d5122a;
+}
+
+
+.donation-copy > p {
+    margin-bottom: 28px;
+
+    color: #444444;
+
+    font-size: 1.08rem;
+
+    line-height: 1.7;
+}
+
+
+
+/* ========================================
+   DONATE BUTTON
+======================================== */
+
+.donation-button {
+    display: inline-block;
+
+    padding:
+        15px
+        24px;
+
+    color: #ffffff;
+
+    background: #d5122a;
+
+    text-decoration: none;
+
+    font-size: 0.8rem;
+
+    font-weight: 900;
+
+    letter-spacing: 1.5px;
+
+    border:
+        3px solid
+        #d5122a;
+
+    transition:
+        background 0.2s ease,
+        border-color 0.2s ease,
+        transform 0.2s ease;
+}
+
+
+.donation-button:hover {
+    background: #27396f;
+
+    border-color: #27396f;
+
+    transform:
+        translateY(-3px);
+}
+
+
+.donation-copy
+.donation-note {
+    margin:
+        15px
+        0
+        0;
+
+    color: #777777;
+
+    font-size: 0.8rem;
+
+    font-style: italic;
+}
+
+
+
+/* ========================================
+   TABLET / MOBILE
+======================================== */
+
+@media (max-width: 800px) {
+
+    .donation-card {
+        grid-template-columns: 1fr;
+
+        max-width: 600px;
+
+        margin: 0 auto;
+
+        gap: 40px;
+
+        text-align: center;
+    }
+
+
+    .donation-qr {
+        width: 100%;
+
+        max-width: 360px;
+
+        margin: 0 auto;
+    }
+
+}
+
+
+@media (max-width: 600px) {
+
+    .donation-section {
+        padding:
+            70px
+            22px
+            80px;
+    }
+
+
+    .donation-section h2 {
+        font-size: 3.5rem;
+    }
+
+
+    .donation-card {
+        padding:
+            30px
+            22px;
+    }
+
+
+    .donation-stars {
+        font-size: 1.2rem;
+
+        letter-spacing: 7px;
+    }
+
+
+    .donation-stars span {
+        font-size: 1.7rem;
+    }
+
+
+    .donation-kicker {
+        font-size: 0.67rem;
+
+        letter-spacing: 2px;
+    }
+
+
+    .donation-divider {
+        width: 100%;
+
+        margin:
+            30px
+            auto
+            40px;
+    }
+
+
+    .donation-button {
+        width: 100%;
+
+        text-align: center;
+    }
+
+}
